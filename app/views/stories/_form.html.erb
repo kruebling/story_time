@@ -1,0 +1,7 @@
+<%= form_for [@user, @story] do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <p><%= f.submit %></p>
+<% end %>
+
+<%= render('stories/errors', :object => @story) %>
